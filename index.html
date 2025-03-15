@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitar Art</title>
+    <title>Christopher Guitar Art</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,16 +17,16 @@
         header {
             background-color: #000000;
             color: #ffcc00;
-            padding: 20px 0; /* Reducido para móviles */
+            padding: 15px 0; /* Más compacto para móviles */
         }
         h1 {
             margin: 0;
-            font-size: 2em; /* Reducido para móviles */
+            font-size: 1.8em; /* Más pequeño para móviles */
         }
         .container {
-            max-width: 90%; /* Ajustado para móviles */
-            margin: 10px auto; /* Reducido para móviles */
-            padding: 15px; /* Reducido para móviles */
+            max-width: 90%; /* Ocupa más espacio en móviles */
+            margin: 10px auto; /* Menos margen para móviles */
+            padding: 15px; /* Menos padding para móviles */
             background-color: #262626;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
@@ -34,33 +34,34 @@
             z-index: 1; /* Asegura que el contenido esté sobre las partículas */
         }
         .bio {
-            text-align: center; /* Centra el texto de la biografía */
-            line-height: 1.6;
+            text-align: center;
+            line-height: 1.5; /* Mejor interlineado para móviles */
         }
         .bio h2 {
             color: #ffcc00;
-            font-size: 1.5em; /* Reducido para móviles */
+            font-size: 1.4em; /* Más pequeño para móviles */
             margin-bottom: 10px;
         }
         .bio p {
-            font-size: 1em; /* Reducido para móviles */
-            margin: 0 auto; /* Centra los párrafos */
+            font-size: 0.9em; /* Más pequeño para móviles */
+            margin: 0 auto;
             max-width: 90%; /* Ajustado para móviles */
         }
         .social-links {
-            margin-top: 20px; /* Reducido para móviles */
+            margin-top: 20px;
         }
         .social-links h2 {
             color: #ffcc00;
-            font-size: 1.5em; /* Reducido para móviles */
-            margin-bottom: 10px; /* Reducido para móviles */
+            font-size: 1.4em; /* Más pequeño para móviles */
+            margin-bottom: 15px;
         }
         .social-links a {
-            margin: 0 10px; /* Reducido para móviles */
+            margin: 0 10px;
             text-decoration: none;
             color: #ffffff;
-            font-size: 24px; /* Reducido para móviles */
+            font-size: 28px; /* Íconos más grandes para móviles */
             transition: color 0.3s ease;
+            display: inline-block; /* Mejor manejo de espaciado */
         }
         .social-links a:hover {
             color: #ffcc00;
@@ -82,16 +83,17 @@
         /* Media queries para ajustes específicos en móviles */
         @media (max-width: 600px) {
             h1 {
-                font-size: 1.8em; /* Más pequeño en móviles */
+                font-size: 1.5em; /* Más pequeño en móviles */
             }
             .bio h2 {
-                font-size: 1.3em; /* Más pequeño en móviles */
+                font-size: 1.2em; /* Más pequeño en móviles */
             }
             .bio p {
-                font-size: 0.9em; /* Más pequeño en móviles */
+                font-size: 0.85em; /* Más pequeño en móviles */
             }
             .social-links a {
-                font-size: 20px; /* Más pequeño en móviles */
+                font-size: 24px; /* Íconos más grandes para móviles */
+                margin: 0 8px; /* Menos espacio entre íconos */
             }
             .container {
                 padding: 10px; /* Más compacto en móviles */
@@ -106,15 +108,14 @@
 
     <!-- Contenido principal -->
     <header>
-        <h1>Christopher Ceballos </h1>
-        <h1>Guitar Art</h1>
+        <h1>Christopher Guitar Art</h1>
     </header>
 
     <div class="container">
         <div class="bio">
             <h2>Biografía</h2>
             <p>
-                ¡Hola! Soy <span class="highlight">Christopher Ceballos </span>, un apasionado del arte y la música, especialmente de la guitarra. A través de mis redes sociales, comparto mi amor por la música, tutoriales, covers y mucho más. Mi objetivo es <span class="highlight">inspirar</span> a otros a explorar su creatividad y disfrutar del proceso de aprendizaje musical.
+                ¡Hola! Soy <span class="highlight">Christopher</span>, un apasionado del arte y la música, especialmente de la guitarra. A través de mis redes sociales, comparto mi amor por la música, tutoriales, covers y mucho más. Mi objetivo es <span class="highlight">inspirar</span> a otros a explorar su creatividad y disfrutar del proceso de aprendizaje musical.
             </p>
             <p>
                 Sígueme en mis redes sociales para estar al tanto de mis últimas creaciones y proyectos. ¡Espero que disfrutes de mi contenido tanto como yo disfruto creándolo!
@@ -132,11 +133,11 @@
     <!-- Script de particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        // Configuración de particles.js
+        // Configuración de particles.js optimizada para móviles
         particlesJS("particles-js", {
             particles: {
                 number: {
-                    value: 50, // Reducido para móviles
+                    value: 30, // Menos partículas para móviles
                     density: {
                         enable: true,
                         value_area: 800
