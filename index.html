@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Christopher Guitar Art</title>
+    <title>Guitar Art</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,16 +17,16 @@
         header {
             background-color: #000000;
             color: #ffcc00;
-            padding: 30px 0;
+            padding: 20px 0; /* Reducido para móviles */
         }
         h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em; /* Reducido para móviles */
         }
         .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
+            max-width: 90%; /* Ajustado para móviles */
+            margin: 10px auto; /* Reducido para móviles */
+            padding: 15px; /* Reducido para móviles */
             background-color: #262626;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
             border-radius: 10px;
@@ -39,27 +39,27 @@
         }
         .bio h2 {
             color: #ffcc00;
-            font-size: 2em;
+            font-size: 1.5em; /* Reducido para móviles */
             margin-bottom: 10px;
         }
         .bio p {
-            font-size: 1.1em;
+            font-size: 1em; /* Reducido para móviles */
             margin: 0 auto; /* Centra los párrafos */
-            max-width: 600px; /* Limita el ancho del texto para mejor lectura */
+            max-width: 90%; /* Ajustado para móviles */
         }
         .social-links {
-            margin-top: 30px;
+            margin-top: 20px; /* Reducido para móviles */
         }
         .social-links h2 {
             color: #ffcc00;
-            font-size: 1.8em;
-            margin-bottom: 15px;
+            font-size: 1.5em; /* Reducido para móviles */
+            margin-bottom: 10px; /* Reducido para móviles */
         }
         .social-links a {
-            margin: 0 15px;
+            margin: 0 10px; /* Reducido para móviles */
             text-decoration: none;
             color: #ffffff;
-            font-size: 28px;
+            font-size: 24px; /* Reducido para móviles */
             transition: color 0.3s ease;
         }
         .social-links a:hover {
@@ -78,6 +78,25 @@
             left: 0;
             z-index: 0; /* Asegura que las partículas estén detrás del contenido */
         }
+
+        /* Media queries para ajustes específicos en móviles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.8em; /* Más pequeño en móviles */
+            }
+            .bio h2 {
+                font-size: 1.3em; /* Más pequeño en móviles */
+            }
+            .bio p {
+                font-size: 0.9em; /* Más pequeño en móviles */
+            }
+            .social-links a {
+                font-size: 20px; /* Más pequeño en móviles */
+            }
+            .container {
+                padding: 10px; /* Más compacto en móviles */
+            }
+        }
     </style>
 </head>
 <body>
@@ -87,14 +106,15 @@
 
     <!-- Contenido principal -->
     <header>
-        <h1>Christopher Guitar Art</h1>
+        <h1>Christopher Ceballos </h1>
+        <h1>Guitar Art</h1>
     </header>
 
     <div class="container">
         <div class="bio">
             <h2>Biografía</h2>
             <p>
-                ¡Hola! Soy <span class="highlight">Christopher</span>, un apasionado del arte y la música, especialmente de la guitarra. A través de mis redes sociales, comparto mi amor por la música, tutoriales, covers y mucho más. Mi objetivo es <span class="highlight">inspirar</span> a otros a explorar su creatividad y disfrutar del proceso de aprendizaje musical.
+                ¡Hola! Soy <span class="highlight">Christopher Ceballos </span>, un apasionado del arte y la música, especialmente de la guitarra. A través de mis redes sociales, comparto mi amor por la música, tutoriales, covers y mucho más. Mi objetivo es <span class="highlight">inspirar</span> a otros a explorar su creatividad y disfrutar del proceso de aprendizaje musical.
             </p>
             <p>
                 Sígueme en mis redes sociales para estar al tanto de mis últimas creaciones y proyectos. ¡Espero que disfrutes de mi contenido tanto como yo disfruto creándolo!
@@ -116,7 +136,7 @@
         particlesJS("particles-js", {
             particles: {
                 number: {
-                    value: 80, // Cantidad de partículas
+                    value: 50, // Reducido para móviles
                     density: {
                         enable: true,
                         value_area: 800
